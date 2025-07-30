@@ -50,5 +50,5 @@ ruby main.rb
 
 ## ✅ Sample Output
 ```rust
-( tiger ) -> ( cat ) -> ( lion ) -> ( cheater ) -> ( tiger ) -> ( leopard ) -> ( jaguar ) -> nil
+( dog ) -> ( cat ) -> ( parrot ) -> ( hamster ) -> ( snake ) -> ( turtle ) -> nil
 ```
