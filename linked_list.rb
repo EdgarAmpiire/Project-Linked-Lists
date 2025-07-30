@@ -80,6 +80,38 @@ class LinkedList
     nil
   end
 
-  
+  def to_s
+    current = @head
+    result = ""
+    while current
+      result += "( #{current.value} ) -> "
+      current = current.next_node
+    end
+    result += 'nil'
+    result
+  end
+
+  def insert_at(value, index)
+    return prepend(value) if index == 0
+    prev_node = at(index - 1)
+    return nil if prev_node.nil?
+
+    new_node = Node.new(value, prev_node.next_node)
+    prev_node.next_node = new_node
+  end
+
+  def remove_at(index)
+    return nil if @head.nil?
+
+    if index == 0
+      @head = @head.next_node
+      return
+    end
+
+    prev_node = at(index - 1)
+    return nil if prev_node.nil? || prev_node.next_node.nil?
+    
+    prev_node.next_node = prev_node.next_node.next_node
+  end
 
 end
