@@ -45,7 +45,7 @@ class LinkedList
     count = 0
     while current
       return current if count == index
-      count =+ 1
+      count += 1
       current = current.next_node
     end
     nil
@@ -110,7 +110,7 @@ class LinkedList
 
     prev_node = at(index - 1)
     return nil if prev_node.nil? || prev_node.next_node.nil?
-    
+
     prev_node.next_node = prev_node.next_node.next_node
   end
 
