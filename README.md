@@ -22,20 +22,20 @@ linked_list_project/
 ### `LinkedList` Class Methods
 
 ```bash
-| Method           | Description |
-|------------------|-------------|
-| `append(value)`         | Adds a new node to the end |
-| `prepend(value)`        | Adds a new node to the beginning |
-| `size`                 | Returns the number of nodes |
-| `head`                 | Returns the first node |
-| `tail`                 | Returns the last node |
-| `at(index)`            | Returns the node at a specific index |
-| `pop`                  | Removes the last node |
-| `contains?(value)`     | Returns true/false if a value exists |
-| `find(value)`          | Returns the index of a value |
-| `to_s`                 | String representation of the list |
-| `insert_at(value, index)` | Inserts a value at a specific index |
-| `remove_at(index)`     | Removes the node at a specific index |
+| Method                    | Description                            |
+|---------------------------|----------------------------------------|
+| `append(value)`           | Adds a new node to the end             |
+| `prepend(value)`          | Adds a new node to the beginning       |
+| `size`                    | Returns the number of nodes            |
+| `head`                    | Returns the first node                 |
+| `tail`                    | Returns the last node                  |
+| `at(index)`               | Returns the node at a specific index   |
+| `pop`                     | Removes the last node                  |
+| `contains?(value)`        | Returns true/false if a value exists   |
+| `find(value)`             | Returns the index of a value           |
+| `to_s`                    | String representation of the list      |
+| `insert_at(value, index)` | Inserts a value at a specific index    |
+| `remove_at(index)`        | Removes the node at a specific index   |
 ```
 
 ## 🧪 How to Run the Project
@@ -50,5 +50,5 @@ ruby main.rb
 
 ## ✅ Sample Output
 ```rust
-( dog ) -> ( cat ) -> ( parrot ) -> ( hamster ) -> ( snake ) -> ( turtle ) -> nil
+( tiger ) -> ( cat ) -> ( lion ) -> ( cheater ) -> ( tiger ) -> ( leopard ) -> ( jaguar ) -> nil
 ```
