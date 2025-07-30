@@ -28,6 +28,36 @@ class LinkedList
     count
   end
 
-  
+  def head
+    @head
+  end
+
+  def tail
+    current = @head
+    return nil if current.nil?
+
+    current = current.next_node while current.next_node
+    current
+  end
+
+  def at(index)
+    current = @head
+    count = 0
+    while current
+      return current if count == index
+      count =+ 1
+      current = current.next_node
+    end
+    nil
+  end
+
+  def pop
+    return nil if @head.nil?
+    return @head = nil if head.next_node.nil?
+
+    current = @head
+    current = current.next_node while current.next_node.next_node
+    current.next_node = nil
+  end
 
 end
